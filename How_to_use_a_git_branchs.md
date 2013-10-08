@@ -140,7 +140,7 @@ cuando tenemos el merge de nuestra feature en la rama master, podemos borrar la 
 	$ git branch -d feature-001
 	Deleted branch feature-H-1 (was 765ce08).
 
-## La cagamos - como arreglarlo?
+## La cagamos como arreglarlo?
 
 Nos queremos mover a un commit anterior 
 
