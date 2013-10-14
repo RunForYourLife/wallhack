@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tablet1</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../package/lungo/lungo.css">
+    <link rel="stylesheet" href="../../package/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="../../package/lungo.icon/lungo.icon.css">
+
+</head>
+
+<body>
+    <!-- aside -->
+    <aside id="menu">
+        <header data-title="Aside"></header>
+        <article class="active list scroll">
+            <ul>
+                <li data-view-article="byDriver" data-icon="user">
+                    <strong class="text bold">Drivers</strong>
+                </li>
+                <li data-view-article="byTeam" data-icon="group">
+                    <strong class="text bold">Teams</strong>
+                </li>
+            </ul>
+        </article>
+    </aside>
+
+    <!-- main section with articles -->
+    <section id="ranking" data-transition="slide" data-children="driver team" data-aside="menu">
+        <header data-title="Drivers">
+            <nav class="left">
+                <button data-icon="list" data-view-aside="menu"></button>
+            </nav>
+        </header>
+        <article id="byDriver" class="list scroll">
+            <ul data-view-section="driver">
+                <li class="thumb big">
+                    <img src="http://www.formula1.com/photos/teams_and_drivers/driver_profile/main/main_profile_828.jpg"/>
+                    <div>
+                        <strong class="text bold">Lewis Hamilton</strong>
+                        <span>lorem ipsum</span>
+                        <small>Mercedes</small>
+
+                    </div>
+                </li>
+                
+                <li class="thumb big">
+                    <img src="http://www.formula1.com/photos/teams_and_drivers/driver_profile/main/main_profile_30.jpg"/>
+                    <div>
+                         <div class="on-right text tiny">lorem ipsum</div>
+                        <strong class="text bold">Fernando Alonso</strong>
+                        <small>Ferrari</small>
+                    </div>
+                </li>
+
+
+                <li>Hamilton</li>
+                <li>Vettel</li><li>Vettel</li>
+                <li>Webber</li><li>Webber</li>
+                <li>Alonso</li><li>Alonso</li>
+                <li>Hamilton</li><li>Hamilton</li>
+                <li>Vettel</li><li>Vettel</li>
+                <li>Webber</li><li>Webber</li>
+                <li>Alonso</li><li>Alonso</li>
+                <li>Hamilton</li><li>Hamilton</li>
+                <li>Vettel</li><li>Vettel</li>
+                <li>Webber</li><li>Webber</li>
+                <li>Alonso</li><li>Alonso</li>
+            </ul>
+        </article>
+        <article id="byTeam" class="list scroll">
+            <ul>
+                <li data-view-section="team">Ferrari</li><li data-view-section="team">Ferrari</li>
+                <li data-view-section="team">McLaren</li><li data-view-section="team">McLaren</li>
+                <li data-view-section="team">RedBull</li><li data-view-section="team">RedBull</li>
+                <li data-view-section="team">Renault</li><li data-view-section="team">Renault</li>
+                <li data-view-section="team">Renault</li><li data-view-section="team">Renault</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- driver section -->
+    <section id="driver" data-transition="slide">
+        <header data-title="Driver Info">
+            <nav class="left">
+                <button data-view-section="back" data-icon="arrow-left"></button>
+            </nav>
+            <nav class="on-right"></nav>
+        </header>
+        <article id="ranking-drivers">Driver xxxx</article>
+        <article id="ranking-teams">Team yyyy</article>
+    </section>
+
+    <!-- team section -->
+    <section id="team" data-transition="slide" data-children="comments">
+        <header data-title="Ranking teams">
+            <nav class="left">
+                <button data-icon="arrow-left" data-view-section="back"></button>
+            </nav>
+            <nav class="on-right"></nav>
+        </header>
+        <article id="team-article">
+            <button class="anchor" data-view-section="comments">view comments</button>
+        </article>
+    </section>
+
+    <section id="comments" data-transition="slide">
+        <header data-title="Team comments">
+            <nav class="left">
+                <button data-icon="arrow-left" data-view-section="back"></button>
+            </nav>
+            <nav class="on-right"></nav>
+        </header>
+        <article id="comments-article">
+            comments
+        </article>
+    </section>
+
+    <!-- Lungo dependencies -->
+    <script src="../components/quojs/quo.js"></script>
+    <script src="../../build/lungo.debug.js"></script>
+
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Tablet tests',
+            version: '2.2',
+            history: false
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
