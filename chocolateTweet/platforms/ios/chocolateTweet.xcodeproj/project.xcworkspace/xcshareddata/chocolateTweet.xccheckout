@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B2DC9C39-CC5F-4414-B125-8916AECBCE66</string>
+	<key>IDESourceControlProjectName</key>
+	<string>chocolateTweet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B259DA56-3414-4EBD-A181-B3BE2A432BC9</key>
+		<string>https://github.com/RunForYourLive/wallhack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>chocolateTweet/platforms/ios/chocolateTweet.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B259DA56-3414-4EBD-A181-B3BE2A432BC9</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RunForYourLive/wallhack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B259DA56-3414-4EBD-A181-B3BE2A432BC9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B259DA56-3414-4EBD-A181-B3BE2A432BC9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wallhack</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,22 +7,94 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <title>My AngularJS App</title>
     <link rel="stylesheet" href="css/app.css" />
+        <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="lib/lungo/lungo.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="#/view1">view1</a>
-        </li>
-        <li><a href="#/view2">view2</a>
-        </li>
-    </ul>
+    <!-- aside -->
+    <aside id="menu">
+        <header data-title="Run For Lofe"></header>
+        <article class="active list scroll">
+            <ul>
+                <li data-view-section="Training" data-icon="time">
+                    <strong class="text bold">Trainings</strong>
+                </li>
+                <li data-view-section="Game" data-icon="play">
+                    <strong class="text bold">Games</strong>
+                </li>
+            </ul>
+        </article>
+    </aside>
 
-    <div ng-view></div>
+    <!-- main section with articles -->
+    <section id="Training" data-transition="slide" data-aside="menu">
+        <header data-title="Trainings">
+            <nav class="left">
+                <button data-icon="list" data-view-aside="menu"></button>
+            </nav>
+        </header>
+        <article id="Trainings" class="list scroll indented">
+                                    <div ng-view></div>
 
     <div>Angular seed app: v
         <span app-version></span>
     </div>
+            <ul>
+                <li class="thumb big">
+                    <div>
+                        <strong class="text bold">Phoneix Park</strong>
+                        <span>17/10/2012</span>
+                        <small>10 km</small>
 
+                    </div>
+
+                </li>
+                
+                <li class="thumb big">
+                    <div>
+                        <strong class="text bold">Barceloneta</strong>
+                        <span>18/10/2012</span>
+                        <small>5 km</small>
+
+                    </div>
+                </li>
+
+                <li class="right" data-count="23 units">
+                    <strong>data-count</strong>
+                    <small>Creates counters in different &lt;elements&gt;</small>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- main section with articles -->
+    <section id="Game" data-transition="slide" data-aside="menu">
+        <header data-title="Games">
+            <nav class="left">
+                <button data-icon="list" data-view-aside="menu"></button>
+            </nav>
+        </header>
+        <article id="Games" class="list scroll indented">
+            <ul>
+                <li>Zombie</li>
+                <li>Zoo</li>
+                <li>The Farm</li>
+                <li>Personal Trainer</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Lungo dependencies -->
+    <script src="quo.js"></script>
+    <script src="lungo.js"></script>
+
+
+    <!-- Lungo dependencies -->
+    <script src="lib/quo/quo.js"></script>
+    <script src="lib/lungo/lungo.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <!-- In production use:
@@ -37,6 +109,14 @@
     <script src="js/directives.js"></script>
     <script type="text/javascript">
     app.initialize();
+    </script>
+        <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Tablet tests',
+            version: '2.2',
+            history: false
+        });
     </script>
 </body>
 

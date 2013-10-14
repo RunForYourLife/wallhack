@@ -1,16 +1,22 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
-
+<html>
 <head>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <title>My AngularJS App</title>
-    <link rel="stylesheet" href="css/app.css" />
-        <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="lib/lungo/lungo.css">
-    <link rel="stylesheet" href="lib/lungo/lungo.theme.css">
-    <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
+    <title>prueba</title>
+    <meta name="description" content="">
+    <meta name="author" content="RunForLife tram">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="lungo.css">
+    <link rel="stylesheet" href="lungo.theme.css">
+    <link rel="stylesheet" href="lungo.icon.css">
+
 </head>
 
 <body>
@@ -37,11 +43,6 @@
             </nav>
         </header>
         <article id="Trainings" class="list scroll indented">
-                                    <div ng-view></div>
-
-    <div>Angular seed app: v
-        <span app-version></span>
-    </div>
             <ul>
                 <li class="thumb big">
                     <div>
@@ -50,7 +51,6 @@
                         <small>10 km</small>
 
                     </div>
-
                 </li>
                 
                 <li class="thumb big">
@@ -62,8 +62,8 @@
                     </div>
                 </li>
 
-                <li>
-                    <span class="tag count">23 units</span>
+                <li class="right" data-count="23 units">
+                    <strong>data-count</strong>
                     <small>Creates counters in different &lt;elements&gt;</small>
                 </li>
             </ul>
@@ -91,26 +91,7 @@
     <script src="quo.js"></script>
     <script src="lungo.js"></script>
 
-
-    <!-- Lungo dependencies -->
-    <script src="lib/quo/quo.js"></script>
-    <script src="lib/lungo/lungo.js"></script>
-    <script type="text/javascript" src="phonegap.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular/angular-route.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/directives.js"></script>
-    <script type="text/javascript">
-    app.initialize();
-    </script>
-        <!-- LungoJS - Sandbox App -->
+    <!-- LungoJS - Sandbox App -->
     <script>
         Lungo.init({
             name: 'Tablet tests',
@@ -119,5 +100,4 @@
         });
     </script>
 </body>
-
 </html>
