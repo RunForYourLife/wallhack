@@ -1,0 +1,71 @@
+<!doctype html>
+<html ng-app="RunForLifeApp">
+<head>
+    <meta charset="utf-8">
+    <title>Juegos</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="lib/lungo/lungo.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
+</head>
+
+    <body ng-controller="GamesController">
+
+        <!-- aside -->
+        <aside id="menu">
+            <header data-title="Run For Life"></header>
+            <article class="active list scroll">
+                <ul>
+                    <li data-view-section="Game" data-icon="play">
+                        <strong class="text bold">Games</strong>
+                    </li>
+                </ul>
+            </article>
+        </aside>
+
+        <!-- main section with articles -->
+        <section id="Game" data-transition="slide" data-aside="menu">
+            <header data-title="Games">
+                <nav class="left">
+                    <button data-icon="list" data-view-aside="menu"></button>
+                </nav>
+            </header>
+            <article id="Games" class="list scroll indented">
+                <ul>
+                    <li class="thumb big" ng-repeat="game in games">
+                        <div>
+                            <strong class="text bold">{{game.name}}</strong>
+                            <small>{{game.description}}</small>
+                        </div
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Lungo dependencies -->
+        
+        <script src="lib/quo/quo.js"></script>
+        <script src="lib/lungo/lungo.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="controllers/games.js"></script>
+
+        <!-- LungoJS - Sandbox App -->
+        <script>
+            Lungo.init({
+                name: 'Tablet tests',
+                version: '2.2',
+                history: false
+            });
+        </script>
+
+    </body>
+
+</html>
