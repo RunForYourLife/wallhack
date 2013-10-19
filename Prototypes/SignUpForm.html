@@ -1,0 +1,77 @@
+<html ng-app="RunForLifeApp">
+<head>
+    <meta charset="utf-8">
+    <title>Splash Window</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="lib/lungo/lungo.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
+</head>
+
+    <body ng-controller="SignUpForm">
+
+    <section id="SignUpForm" data-transition="slide">
+        <header data-title="Creá tu perfil" data-back="chevron-left">
+            <nav class="on-right">
+                <button data-label="Save"></button>
+            </nav>
+        </header>
+
+
+        <article id="form-normal" class="scroll">
+            <div class="form">
+                <!-- LABEL + INPUT -->
+                <fieldset>
+                    <label>nombre</label>
+                    <input type="text" placeholder="value">
+                    <label>email</label>
+                    <input type="text" placeholder="value">
+                    <label>peso</label>
+                    <input type="text" placeholder="value">
+
+                    <label>Experiencia</label>
+                    <label class="select ">
+                        <select class="custom">
+                            <option value="1">Primera vez</option>
+                            <option value="2">Un poco de caña</option>
+                            <option value="3">Soy la hostia</option>
+                        </select>
+                    </label>
+
+                    <label>Nacimiento</label>
+                    <input type="date" class="align_right" placeholder="Select finish" value="10/04/1980"/>
+                </fieldset>
+
+            </div>
+        </article>
+
+    </section>
+
+
+        <!-- Lungo dependencies -->
+        
+        <script src="lib/quo/quo.js"></script>
+        <script src="lib/lungo/lungo.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="controllers/run4.js"></script>
+
+        <!-- LungoJS - Sandbox App -->
+        <script>
+            Lungo.init({
+                name: 'Tablet tests',
+                version: '2.2',
+                history: false
+            });
+        </script>
+
+    </body>
+
+</html>

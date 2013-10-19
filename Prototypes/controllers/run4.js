@@ -10,3 +10,16 @@ RunForLifeApp.controller('GamesController', function GamesController($scope) {
      'description': 'asdf asd fasd fasd fasd fasd fasdf'}
   ];
 });
+
+RunForLifeApp.controller('InitialWin', function InitialWin($scope) {
+  $scope.buttons = [
+    {'name': 'Crea Tu Perfil'}
+  ];
+});
+
+RunForLifeApp.controller('SignUpForm', function PerfilController($scope) {
+  $scope.fields = [
+    {'name': 'Crea Tu Perfil'}
+  ];
+});
+
