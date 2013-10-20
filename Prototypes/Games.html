@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
 </head>
 
-    <body ng-controller="GamesController">
+    <body>
 
         <!-- aside -->
         <aside id="menu">
@@ -32,21 +32,39 @@
         </aside>
 
         <!-- main section with articles -->
-        <section id="Game" data-transition="slide" data-aside="menu">
+        <section id="Game" data-transition="slide" data-aside="menu" ng-controller="GamesController">
             <header data-title="Games">
                 <nav class="left">
                     <button data-icon="list" data-view-aside="menu"></button>
                 </nav>
             </header>
-            <article id="Games" class="list scroll indented">
-                <ul>
+            <article id="Games" class="list scroll indented" >
+                <ul data-view-section="GameDetails">
                     <li class="thumb big" ng-repeat="game in games">
                         <div>
                             <strong class="text bold">{{game.name}}</strong>
                             <small>{{game.description}}</small>
-                        </div
+                        </div>
                     </li>
                 </ul>
+            </article>
+        </section>
+
+        <!-- main section with articles -->
+        <section id="GameDetails" data-transition="slide" data-aside="menu" ng-controller="GameDetailsController">
+            <header data-title="{{name}}">
+                <nav class="left">
+                    <button data-view-section="back" data-icon="arrow-left"></button>
+                </nav>
+                <nav class="on-right"></nav>
+            </header>
+            <article id="GameDetails" >
+                <div class="form">
+                    <fieldset>
+                        <label>{{name}}</label>
+                        <label>{{description}}</label>
+                    </fieldset>
+                </div>
             </article>
         </section>
 
