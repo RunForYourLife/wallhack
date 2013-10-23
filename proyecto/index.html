@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RUNNERBOT</title>
+    <meta name="description" content="Running App for TFC UOC">
+    <meta name="author" content="Roberto Febrer González">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="static/stylesheets/app.css">
+</head>
+
+<body>
+    <section id="main" data-aside="menuoptions" data-transition="slide" class="drag">
+     <header>
+        <span class="title centered">RUNNERBOT</span>
+        <nav class="left box">
+            <a href="#" data-view-aside="menuoptions"  data-icon="menu" ></a>
+        </nav>
+        <nav class="on-right">
+            <a href="#profile" class="rb sprite-901"></a>
+        </nav>
+    </header>
+    <article id="principal" class="list indented scroll">
+        <ul>
+            <li class="centerCont">
+                <a class="button theme" data-view-section="profile" data-label="Crear perfil"></a>
+
+            </li>
+            <li>
+                <strong class="text bold">¿Qué es RunnerBot?</strong>
+                <span class="text tiny">
+                    RunnerBot es una aplicación para correr que te aportará diversión mientras practicas tu deporte favorito.
+                </span>
+            </li>
+            <li>
+                <strong class="text bold">¿Por qué crear un perfil?</strong>
+                <span class="text tiny">
+                    RunnerBot necesita de ciertos datos básicos para proporcionarte una mejor experiencia.
+                </span>
+            </li>
+            <li>   
+                <a class="button margin-top secondary" data-view-section="training" data-label="Entrenar"></a>
+            </li>
+        </ul>
+    </article>
+    <footer>
+        <nav>
+            <a href="#terms" data-router="section">Términos &amp; condiciones</a>
+        </nav>
+    </footer>
+</section>
+
+<!-- Lungo dependencies -->
+<script src="components/quojs/quo.js"></script>
+<script src="components/lungo/lungo.js"></script>
+<script>
+Lungo.init({
+    name: 'RUNNERBOT',
+    version: '1.0',
+    resources: [
+    'static/asides/aside.html',
+    'static/sections/profile.html',
+    'static/sections/training.html',
+    'static/sections/games.html',
+    'static/sections/history.html',
+    'static/sections/share.html',
+    'static/sections/terms.html',
+    'static/sections/config.html'
+    ]
+});
+</script>
+<script src="static/javascripts/app.js"></script>
+</body>
+</html>
