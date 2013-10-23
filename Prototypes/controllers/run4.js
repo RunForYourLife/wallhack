@@ -6,7 +6,6 @@ var RunForLifeApp = angular
 
       $routeProvider
         .when('/Games/:gameId', {
-          templateUrl: 'GameDetails.html',
           controller: 'GameDetailsController'
         });
   });
@@ -27,7 +26,7 @@ RunForLifeApp.controller('GamesController', function GamesController($scope) {
 });
 
 RunForLifeApp.controller('GameDetailsController', function GameDetailsController($scope, $routeParams) {
-  $scope.id = $routeParams
+  $scope.params = $routeParams;
   $scope.name =  'Run for your life';
   $scope.description =  'asdfas dasdf asdf asdf asdf';
 });
