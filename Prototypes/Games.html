@@ -39,40 +39,29 @@
                 </nav>
             </header>
             <article id="Games" class="list scroll indented" >
-                <ul data-view-section="GameDetails">
+                <ul>
                     <li class="thumb big" ng-repeat="game in games">
-                        <div>
-                            <strong class="text bold">{{game.name}}</strong>
-                            <small>{{game.description}}</small>
+                        
+                        <div data-view-section="GameDetails">
+                            <a href="#/Games/{{game.id}}">
+                                <strong class="text bold">{{game.name}}</strong>
+                                <small>{{game.description}}</small>
+                            </a>
                         </div>
+                        
                     </li>
                 </ul>
             </article>
         </section>
 
-        <!-- main section with articles -->
-        <section id="GameDetails" data-transition="slide" data-aside="menu" ng-controller="GameDetailsController">
-            <header data-title="{{name}}">
-                <nav class="left">
-                    <button data-view-section="back" data-icon="arrow-left"></button>
-                </nav>
-                <nav class="on-right"></nav>
-            </header>
-            <article id="GameDetails" >
-                <div class="form">
-                    <fieldset>
-                        <label>{{name}}</label>
-                        <label>{{description}}</label>
-                    </fieldset>
-                </div>
-            </article>
-        </section>
+        <div ng-view hidden></div>
 
         <!-- Lungo dependencies -->
         
         <script src="lib/quo/quo.js"></script>
         <script src="lib/lungo/lungo.js"></script>
         <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
         <script src="controllers/run4.js"></script>
 
         <!-- LungoJS - Sandbox App -->
@@ -80,7 +69,8 @@
             Lungo.init({
                 name: 'Tablet tests',
                 version: '2.2',
-                history: false
+                history: false,
+                resources: [ 'GameDetails.html' ] 
             });
         </script>
 
