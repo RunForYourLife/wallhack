@@ -18,3 +18,5 @@ npm-debug.log
 .sass-cache/
 node_modules/
 public/lib
+
+dir_to_ignore/angularMax/.idea
