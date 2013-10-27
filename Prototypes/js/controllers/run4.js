@@ -11,18 +11,8 @@ var RunForLifeApp = angular
   });
 
 
-RunForLifeApp.controller('GamesController', function GamesController($scope) {
-  $scope.games = [
-    {'id' : 1,
-     'name': 'Run for your life',
-     'description': 'asdfas dasdf asdf asdf asdf '},
-    {'id' : 2,
-     'name': 'The Farm',
-     'description': 'asdf asdf asd fasd f'},
-    {'id' : 3,
-     'name': 'Your mum trains with you',
-     'description': 'asdf asd fasd fasd fasd fasd fasdf'}
-  ];
+RunForLifeApp.controller('GamesController', function GamesController($scope, gamesData) {
+  $scope.games = gamesData.games;
 });
 
 RunForLifeApp.controller('GameDetailsController', function GameDetailsController($scope, $routeParams) {

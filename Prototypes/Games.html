@@ -55,22 +55,20 @@
         </section>
 
         <div ng-view></div>
-
-        <!-- Lungo dependencies -->
         
         <script src="lib/quo/quo.js"></script>
         <script src="lib/lungo/lungo.js"></script>
         <script src="lib/angular/angular.js"></script>
         <script src="lib/angular/angular-route.js"></script>
-        <script src="controllers/run4.js"></script>
+        <script src="js/controllers/run4.js"></script>
+        <script src="js/services/GamesData.js"></script>
 
-        <!-- LungoJS - Sandbox App -->
         <script>
             Lungo.init({
                 name: 'Tablet tests',
                 version: '2.2',
                 history: false ,
-                resources: [ 'GameDetails.html' ]
+                resources: [ 'partials/GameDetails.html' ]
             });
         </script>
 
