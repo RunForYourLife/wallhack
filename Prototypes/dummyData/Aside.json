@@ -1,31 +1,31 @@
 [{
     "section": "training",
     "icon": "user",
-    "class": "cleft ",
+    "class": "cleft selectable",
     "label": "Entrenar"
 }, {
     "section": "Game",
     "icon": "list",
-    "class": "",
+    "class": "selectable active",
     "label": "Juegos"
 }, {
     "section": "history",
     "icon": "check",
-    "class": "",
+    "class": "selectable",
     "label": "Historial"
 }, {
     "section": "config",
     "icon": "signout",
-    "class": "",
+    "class": "selectable",
     "label": "Configuración"
 }, {
     "section": "profile",
     "icon": "menu",
-    "class": "",
+    "class": "selectable",
     "label": "Perfil"
 }, {
     "section": "share",
     "icon": "tag",
-    "class": "",
+    "class": "selectable",
     "label": "Compartir"
 }]
