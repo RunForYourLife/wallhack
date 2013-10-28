@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app="RunForLifeApp">
+<head>
+    <meta charset="utf-8">
+    <title>Juegos</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="lib/lungo/lungo.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="lib/lungo/lungo.icon.css">
+</head>
+
+    <body>
+
+        <!-- aside -->
+
+
+        <!-- main section with articles -->
+       
+        <div ng-view></div>
+        
+        <script src="lib/quo/quo.js"></script>
+        <script src="lib/lungo/lungo.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="js/controllers/run4.js"></script>
+        <script src="js/services/GamesData.js"></script>
+
+        <script>
+            Lungo.init({
+                name: 'Tablet tests',
+                version: '2.2',
+                history: false ,
+                resources: [ 
+                'partials/Games.html',
+                'partials/aside.html'
+                'partials/GameDetails.html' 
+                ]
+            });
+        </script>
+
+    </body>
+
+</html>
