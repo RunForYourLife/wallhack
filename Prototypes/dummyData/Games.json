@@ -13,4 +13,10 @@
     "name": "Your mum trains with you",
     "description": "asdf asd fasd fasd fasd fasd fasdf",
     "icon": "http://lorempixel.com/66/66/nature"
+},
+{
+    "id": 4,
+    "name": "lorem ipsum ur mum trains with you",
+    "description": "asdf asd fasd fasd fasd fasd fasdf",
+    "icon": "http://lorempixel.com/66/66/sports"
 }]
