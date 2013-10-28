@@ -18,29 +18,26 @@
 </head>
 
     <body>
-
-        <!-- aside -->
-
-
-        <!-- main section with articles -->
-       
         <div ng-view></div>
         
         <script src="lib/quo/quo.js"></script>
         <script src="lib/lungo/lungo.js"></script>
         <script src="lib/angular/angular.js"></script>
         <script src="lib/angular/angular-route.js"></script>
-        <script src="js/controllers/run4.js"></script>
+        <script src="js/controllers/run4.js"></script>  
+        <script src="js/controllers/GameDetailsController.js"></script>
+        <script src="js/controllers/GamesController.js"></script>
         <script src="js/services/GamesData.js"></script>
+      
 
         <script>
             Lungo.init({
-                name: 'Tablet tests',
+                name: 'RunForLifeApp',
                 version: '2.2',
                 history: false ,
                 resources: [ 
                 'partials/Games.html',
-                'partials/aside.html'
+                'partials/aside.html',
                 'partials/GameDetails.html' 
                 ]
             });

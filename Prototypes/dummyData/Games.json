@@ -1,0 +1,16 @@
+[{
+    "id": 1,
+    "name": "Run for your life",
+    "description": "asdfas dasdf asdf asdf asdf ",
+    "icon": "http://lorempixel.com/66/66/sports"
+}, {
+    "id": 2,
+    "name": "The Farm",
+    "description": "asdf asdf asd fasd f",
+    "icon": "http://lorempixel.com/66/66/food"
+}, {
+    "id": 3,
+    "name": "Your mum trains with you",
+    "description": "asdf asd fasd fasd fasd fasd fasdf",
+    "icon": "http://lorempixel.com/66/66/nature"
+}]
