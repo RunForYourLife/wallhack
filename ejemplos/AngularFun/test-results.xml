@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.2 (Mac OS X)" package="undefined" timestamp="2013-10-28T10:02:18" id="0" hostname="MacBook-Air-de-Tomas.local" tests="3" errors="0" failures="0" time="0.022">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.2 Safari/534.34"/>
+    </properties>
+    <testcase name="username should be prepended with the @ sign" time="0.016" classname="PhantomJS 1.9.2 (Mac OS X).twitterfy"/>
+    <testcase name="should get people" time="0.004" classname="PhantomJS 1.9.2 (Mac OS X).personService"/>
+    <testcase name="should get person" time="0.002" classname="PhantomJS 1.9.2 (Mac OS X).personService"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
