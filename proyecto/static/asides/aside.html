@@ -1,37 +1,45 @@
 <aside id="menuoptions" data-transition="left">
-    <header data-title="aside">
+    <header data-title="Menu">
         <nav class="on-right">
-            <a href="#" class="buttons" data-icon="settings"></a>
+            <a href="#" class="buttons" class="icon settings"></a>
         </nav>
     </header>
 
-    <article class="list scroll active">
+    <article id="asidePrincipal" class="list scroll active">
+    </article>
+    <script id="AsideTpl" type="text/template">
         <ul>
             <li data-view-section="main" >
-                <strong class="rb sprite-901 fleft"></strong>
-                <div class="fleft">
+                <strong class=""></strong>
+                <div class="rb sprite-901" style="width:100%;height:100%;padding-left: 33px;">
                     <strong >RunnerBot</strong>
-                    <small >Fit & Fun!</small>
+                    <small >{{msgMision}}</small>
                 </div>
             </li>
-            <li data-view-section="training" data-icon="user" class="cleft selectable">
-                <strong>Entrenar</strong>
+            <li data-view-section="training" class="selectable">
+            <span class=" icon heart"></span>
+                <strong class="">{{btnTraining}}</strong>
             </li>
-            <li data-view-section="games" data-icon="list" class="selectable">
-                <strong>Juegos</strong>
+            <li data-view-section="games" class="selectable">
+            <span class=" icon star"></span>
+                <strong class="">{{btnGames}}</strong>
             </li>
-            <li data-view-section="history" data-icon="check" class="selectable">
-                <strong>Historial</strong>
+            <li data-view-section="history" class="selectable">
+            <span class=" icon calendar"></span>
+                <strong class="">{{btnHistory}}</strong>
             </li>
-            <li data-view-section="config" data-icon="signout" class="selectable">
-                <strong>Configuración</strong>
+            <li data-view-section="config"  class="selectable">
+            <span class=" icon cogs"></span>
+                <strong class="">{{btnConfig}}</strong>
             </li>
-            <li data-view-section="profile" data-icon="menu" class="selectable">
-                <strong>Perfil</strong>
+            <li data-view-section="profile" class="selectable">
+            <span class=" icon user"></span>
+                <strong class="">{{btnProfile}}</strong>
             </li>
-            <li data-view-section="share" data-icon="tag" class="selectable">
-                <strong>Compartir</strong>
+            <li data-view-section="share" class="selectable">
+            <span class=" icon comment-alt"></span>
+                <strong class="">{{btnShare}}</strong>
             </li>
         </ul>
-    </article>
+    </script>
 </aside>

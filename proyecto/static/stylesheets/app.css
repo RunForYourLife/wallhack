@@ -11,7 +11,7 @@
     text-align: center;
 }
 
- li {
+li {
     padding-top: 128px !important;
     padding-bottom: 128px !important;
 }
@@ -65,4 +65,4 @@
 .rb.sprite-918{ background-position: 0 -1394px; width: 32px; height: 32px; } 
 .rb.sprite-919{ background-position: 0 -1476px; width: 32px; height: 32px; } 
 .rb.sprite-920{ background-position: 0 -1558px; width: 32px; height: 32px; } 
-
+.dnone{display:none;}

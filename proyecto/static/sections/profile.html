@@ -1,45 +1,32 @@
-<section id="profile" data-transition="slide" data-pull="normal">
-   <header>
-    <span class="title centered">PROFILE</span>
-    <nav class="left box">
-        <a href="#" data-view-aside="menuoptions"  data-icon="menu" ></a>
-    </nav>
-    <nav class="on-right">
-        <a href="#profile" class="rb sprite-901"></a>
-    </nav>
-</header>
-<article id="register" class="active indented">
+<section id="profile" data-aside="menuoptions" data-transition="slide" data-pull="normal">
+   <header></header>
+<article id="register" class="active indented scroll">
     <form>
-        <input id="regUsername" type="text" placeholder="Usuario" value="" class="round" required>
-        <input id="regFirstName" type="text" placeholder="Nombre" class="round">
-        <input id="regLastName" type="text" placeholder="Apellidos" class="round">
-        <input id="regPeso" type="text" placeholder="Peso" value="" class="round">
-        <input id="regEmail" type="text" placeholder="Email" value="" class="round">
+        <input id="regUsername" type="text" placeholder="Nombre" value="" class="round" required>
+        <input id="regFirstName" type="text" placeholder="Apellidos" class="round">
+        <input id="regPeso" type="number" placeholder="Peso" value="" class="round">
+        <input id="regEmail" type="email" placeholder="Email" value="" class="round">
+        <input id="regAge" type="number" placeholder="Edad" value="" class="round">
         <select id="regGenero" >
             <option value="">Sexo</option>
             <option value="M">Hombre</option>
             <option value="W">Mujer</option>
+        </select>  
+        <select id="regRol" >
+            <option value="0">Principiante</option>
+            <option value="1">Avanzado</option>
+            <option value="2">Profesional</option>
         </select>
-
+        <div id="regPoints" class="points round"></div>
+        <div id="regPointsWin" class="pointswin round"></div>
+        <div id="regPointsLose" class="pointslose round"></div>
     </form>
     <ul class="centerCont">
-        <li>
-            <form>
-                <label class="checkbox">
-                    <input type="checkbox" id="accepttc" value="accepttc" checked>
-                </label>
-                <a href="#terms" data-router="section" class="grey">Aceptar los términos</a>
-            </form>
-        </li>
         <li>   
-            <a class="button margin-top secondary"  href="#training" data-label="Continuar"></a>
+            <a class="button margin-top secondary" id='btnSaveProfile' data-label="Guardar"></a>
         </li>
     </ul>
 </article>
-<footer>
-    <nav>
-        <a href="#terms" data-router="section">Términos &amp; condiciones</a>
-    </nav>
-</footer>
+<footer></footer>
 
 </section>

@@ -21,65 +21,80 @@
 </head>
 
 <body>
-    <section id="main" data-aside="menuoptions" data-transition="slide" class="drag">
-     <header>
-        <span class="title centered">RUNNERBOT</span>
-        <nav class="left box">
-            <a href="#" data-view-aside="menuoptions"  data-icon="menu" ></a>
-        </nav>
-        <nav class="on-right">
-            <a href="#profile" class="rb sprite-901"></a>
-        </nav>
-    </header>
-    <article id="principal" class="list indented scroll">
-        <ul>
-            <li class="centerCont">
-                <a class="button theme" data-view-section="profile" data-label="Crear perfil"></a>
+   
+     <section id="main" data-aside="menuoptions" data-transition="slide" class="drag">
+        <header></header>
+        <article id="principal" class="list indented scroll"></article>
+        <footer></footer>
+    </section>
 
-            </li>
-            <li>
-                <strong class="text bold">¿Qué es RunnerBot?</strong>
-                <span class="text tiny">
-                    RunnerBot es una aplicación para correr que te aportará diversión mientras practicas tu deporte favorito.
-                </span>
-            </li>
-            <li>
-                <strong class="text bold">¿Por qué crear un perfil?</strong>
-                <span class="text tiny">
-                    RunnerBot necesita de ciertos datos básicos para proporcionarte una mejor experiencia.
-                </span>
-            </li>
-            <li>   
-                <a class="button margin-top secondary" data-view-section="training" data-label="Entrenar"></a>
-            </li>
-        </ul>
-    </article>
-    <footer>
-        <nav>
-            <a href="#terms" data-router="section">Términos &amp; condiciones</a>
-        </nav>
-    </footer>
-</section>
+    <!-- Lungo dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <script src="components/mustache/mustache.js"></script>
+   <!-- <script src="cordova.js"></script>-->
+  
 
-<!-- Lungo dependencies -->
-<script src="components/quojs/quo.js"></script>
-<script src="components/lungo/lungo.js"></script>
-<script>
-Lungo.init({
-    name: 'RUNNERBOT',
-    version: '1.0',
-    resources: [
-    'static/asides/aside.html',
-    'static/sections/profile.html',
-    'static/sections/training.html',
-    'static/sections/games.html',
-    'static/sections/history.html',
-    'static/sections/share.html',
-    'static/sections/terms.html',
-    'static/sections/config.html'
-    ]
-});
-</script>
-<script src="static/javascripts/app.js"></script>
+    <script>
+    Lungo.init({
+        name: 'RUNNERBOT',
+        version: '1.0',
+        resources: [
+        'static/asides/aside.html',
+        'static/sections/profile.html',
+        'static/sections/training.html',
+        'static/sections/games.html',
+        'static/sections/history.html',
+        'static/sections/share.html',
+        'static/sections/terms.html',
+        'static/sections/config.html'
+        ]
+    });
+    </script>
+    <script id="HeaderTpl" type="text/template">
+    <span class="title centered">{{Title}}</span>
+    <nav class="left box">
+    <a href="#" data-view-aside="menuoptions"  class="icon menu" ></a>
+    </nav>
+    <nav class="left box">
+    <a href="#" data-view-section="back"  class="icon arrow-left" ></a>
+    </nav>
+    <nav class="on-right">
+    <a href="#" data-view-section='profile' class="rb sprite-901"></a>
+    </nav>
+    </script>
+    <script id="FooterTpl" type="text/template">
+    <nav>
+    <a href="#" data-view-section='terms'>{{lblTerm}}</a>
+    </nav>
+    </script>
+    <script id="PrincipalTpl" type="text/template">
+    <ul>
+    <li class='centerCont'>
+    <a class='button theme' data-view-section='profile' data-label='{{btnCreateProfile}}'>{{btnCreateProfile}}</a>
+    </li>
+    <li>
+    <strong class='text bold'>{{lblTitleIntro}}</strong>
+    <span class='text tiny'>{{lblDescIntro}}</span>
+    </li>
+    <li>
+    <strong class='text bold'>{{lblTitleProfileIntro}}</strong>
+    <span class='text tiny'>{{lblDescProfileIntro}}</span>
+    </li>
+    <li>
+    <a class='button margin-top secondary' data-view-section='training' data-label='{{btnTraining}}' id='test'>{{btnTraining}}</a>
+    <a class='button margin-top secondary' onclick="playBeep()">Beep</a>
+    <a class='button margin-top secondary' onclick="vibrate()">vibrate</a>
+    <a class='button margin-top secondary' onclick="speak()">speak</a>
+    </li>
+    </ul>
+    </script>
+    <script src="static/javascripts/tts.js"></script>
+    <script src="static/javascripts/language.js"></script>
+    <script src="static/javascripts/database.js"></script>
+    <script src="static/javascripts/geolocalization.js"></script>
+    <script src="static/javascripts/phonegapfn.js"></script>
+    <script src="static/javascripts/app.js"></script>
+
 </body>
 </html>

@@ -1,58 +1,25 @@
-<section id="history" data-transition="slide" data-pull="normal">
- <header>
-    <span class="title centered">HISTORIAL</span>
-    <nav class="left box">
-        <a href="#" data-view-aside="menuoptions"  data-icon="menu" ></a>
-    </nav>
-    <nav class="on-right">
-        <a href="#profile" class="rb sprite-901"></a>
-    </nav>
-</header>
-<article id="history-list" class="active indented scroll">
-    <ul class="list">
-      <li class="anchor">Historial de entrenamientos</li>
-      <li class="arrow selectable">
-        <strong>21-Oct-2013 - 3,56 km</strong>
-        <small>Juego 1</small>
-    </li>
-     <li class="arrow selectable">
-        <strong>20-Oct-2013 - 3,56 km</strong>
-        <small>Juego 1</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>19-Oct-2013 - 3,56 km</strong>
-        <small>Juego 2</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>18-Oct-2013 - 3,56 km</strong>
-        <small>Juego 1</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>17-Oct-2013 - 3,56 km</strong>
-        <small>Juego 3</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>16-Oct-2013 - 3,56 km</strong>
-        <small>Juego 2</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>15-Oct-2013 - 3,56 km</strong>
-        <small>Juego 6</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>14-Oct-2013 - 3,56 km</strong>
-        <small>Juego 2</small>
-    </li>
-      <li class="arrow selectable">
-        <strong>13-Oct-2013 - 3,56 km</strong>
-        <small>Juego 1</small>
-    </li>
-</ul>
-</article>
-<footer>
-    <nav>
-        <a href="#terms" data-router="section">Términos &amp; condiciones</a>
-    </nav>
-</footer>
+<section id="history" data-aside="menuoptions" data-transition="slide" data-pull="normal">
+ <header></header>
+<article id="historylist" class="active indented scroll"><ul class='list' id='ulhistorylist'></ul></article>
+<article id="historyId" class="indented scroll"></article>
+    <script id="HistoryIdTpl" type="text/template">
+        <div id='dvhistory'>
+            <strong>{{DateTime}}</strong>
+            <small>{{Name}}</small>
+            <div id='btnPlayGame' class='button secondary'>{{btnPlay}}</div>
+            <strong>{{Milestones}}</strong>
+            <small>{{Geopos}}</small>
+        </li>
+        </div>
+    </script>
+    <script id="HistoryListTpl" type="text/template">
+        {{#data}}
+        <li class='arrow selectable' id='{{Id}}'>
+            <strong>{{DateTime}}</strong>
+            <small>{{Name}}</small>
+        </li>
+        {{/data}}
+    </script>
+<footer></footer>
 
 </section>

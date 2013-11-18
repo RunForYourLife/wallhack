@@ -1,38 +1,27 @@
-<section id="games" data-transition="slide" data-pull="normal">
-    <header>
-        <span class="title centered">GAMES</span>
-        <nav class="left box">
-            <a href="#" data-view-aside="menuoptions"  data-icon="menu" ></a>
-        </nav>
-        <nav class="on-right">
-            <a href="#profile" class="rb sprite-901"></a>
-        </nav>
-    </header>
+<section id="games" data-aside="menuoptions" data-transition="slide" data-pull="normal">
+    <header></header>
     <article id="gameslist" class="active indented scroll">
-       <ul class="list">
-        <li class="anchor">Juegos disponibles</li>
-        <li class="arrow selectable">
-            <strong>JUEGO 1</strong>
-            <small>Aumenta tu rendimiento</small>
+       <ul class='list' id='gameslistul'></ul>
+    </article>
+     <article id="gamesId" class="indented scroll">
+       
+    </article>
+    <script id="GamesIdTpl" type="text/template">
+        <div id='dvgame'>
+            <strong>{{Name}}</strong>
+            <small>{{Description}}</small>
+            <a id='{{Id}}' class='button secondary'>{{btnPlay}}</a>
+        </div>
+    </script>
+    <script id="GamesListTpl" type="text/template">
+        {{#data}}
+        <li class='arrow selectable' id='{{Id}}'>
+            <strong>{{Name}}</strong>
+            <small>{{Subtitle}}</small>
         </li>
-        <li class="arrow selectable">
-            <strong>JUEGO 2</strong>
-            <small>Series e intervalos</small>
-        </li>
-        <li class="arrow selectable">
-            <strong>JUEGO 3/strong>
-            <small>Resistencia</small>
-        </li>
-        <li class="arrow selectable">
-            <strong>JUEGO 4</strong>
-            <small>Fondo</small>
-        </li>
-    </ul>
-</article>
-<footer>
-    <nav>
-        <a href="#terms" data-router="section">Términos &amp; condiciones</a>
-    </nav>
-</footer>
+        {{/data}}
+    </script>
+
+    <footer></footer>
 
 </section>
